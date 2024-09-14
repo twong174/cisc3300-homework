@@ -1,0 +1,34 @@
+What is HTML? What does it do?
+HTML is short for HyperText Markup Language. It is used to create and structure content on the web using elements (tags) that tell the browser how to display text, images, links, and other types of content. 
+
+What is CSS? What does it do?
+CSS stands for Cascading Style Sheets, and it is used to control the presentation and layout of HTML elements. It allows you to style the content, controlling things like color, font, spacing, etc. 
+
+Access https://www.fordham.edu/. In your own words, describe how this webpage uses
+structure to convey meaning and navigation options to the user.
+The fordham website consists of a nav bar that allows users to choose different options such as mission, academics, research, etc. Below is a background image with other smaller boxes which each consist of an image, texts, and links above it. On the top left is a search button next to the search button icon which allows users to search for parts of the site that aren't already present. 
+
+What is an HTML element? Tag? Attribute?
+An element is what makes up a webpage. It consists of an opening, content, and closing tag. Some elements don't have closing tags (self-closing elements). A tag tells the browser what kind of element it is and how to interpret the content inside. Tags are inside <> and come in pairs (opening and closing tags). Lastly, an attribute provides additional information about an element. They are inside the opening tag and have a name, value, and an equal sign. 
+
+What are the parts of a CSS rule?
+The parts of a CSS rule include the selector, a declaration block, the property, and the value. 
+
+Selector { 
+	Property: value;
+	Property: value;
+} 
+
+Explain how CSS rules cascade.
+The CSS rules cascade is influenced by importance, specificity, and source order. You can use them !important declaration to override other rules even if those rules have higher specificity or come later in the stylesheet. Specificity determines which rule should be applied when multiple rules target the same element. More specific selectors are given higher priority. For example, ID is more specific than class. Lastly, when two or more rules have the same specificity and are not marked as important, the source order is considered. 
+
+If you have a directory called project-1 that contains two subdirectories, html-files and
+images. In the html-files directory you have an HTML file called html-1.html that has an
+img element with a src attribute, write out the value of the src attribute to access an
+image file called pinecone.jpg in the images directory.
+<img src="../images/pinecone.jpg">
+
+What is the default behavior when submitting a HTML form?
+When you submit an HTML form, the form data is sent to the server specified in the action attribute of the form element using the HTTP method specified in the method attribute. After the form submission, the browser either reloads the current page or navigate to the URL specified in the action attribute. Once the data is submitted, the server processes it and returns a response, which can be a new page, a confirmation, or some other result. 
+
+
