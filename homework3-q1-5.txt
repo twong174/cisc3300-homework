@@ -1,0 +1,21 @@
+1. JS is a high-level, dynamic, and interpreted language used for enhancing web pages by allowing interactive elements on a website (dynamic content updates, form validation, animates, etc). 
+
+Some differences between interpreted and compiled languages include execution process, performance, platform dependency, and error detection. In interpreted languages, the source code is executed line-by-line by an interpreted meaning code that is read and executed simulation iluy. With compiled languages, the source code is translated into machine code by a compiler before execution. Interpreted languages are generally slower in execution, while compiled languages are typically faster since the code is pre-compiled into machine code. Interpreted languages are more platform-independent as they can run on any machine with the appropriate interpreter. Compiled languages are platform-dependent. Lastly, errors may only be detected at runtime with interpreted languages, while errors can be caught at compile time with compiled languages. 
+
+2. With dynamically typed, variables do not need to have their types explicitly declared and their type is determined at runtime. It is more flexible but may lead to runtime errors if a variable type is not what is expected. Statically typed, variables have their type explicitly declared and the type is checked at compile time. It is more robust and can help catch errors before the program runs. 
+
+With strongly typed languages, it enforce strict type rules and does not allow implicit type conversion. This means that operations between incompatible types will result in errors. Weakly typed languages make it more flexible in type conversion and may perform implicit type coercion. This can lead to unexpected behavior.
+
+3. Var is function or globally scoped. Var variables are hoisted to the top of their scope meaning they can be  referenced before their declaration in the code. You can re-declare a variable using var within the same scope without any error.
+
+Let is block-scoped and only accessible within the nearest enclosing block. Variables declared with let are also hoisted, but they are not initialized. Attempting to access them before their declaration results in a ReferenceError. You cannot re-declare a variable using let in the same scope.
+
+Const is also block-scoped and is hoisted but not initialized. Accessing them before declaration results in a ReferenceError. You cannot re-declare a variable declared with const in the same scope. Variables declared with const cannot be reassigned. However, if the variable holds an object or an array, you can still modify the contents of that object or array.
+
+4. Anonymous functions are without names and are used for short-lived operations. They are commonly used as arguments to other functions or when defining functions inline. Higher-order functions take one or more functions as arguments or return a function as its result. A callback function is passed as an argument to another function and executed after some operation has been completed. Callback functions are often used for asynchronous operations, like handling events or performing tasks after a network request. First-class functions means that functions are treated as first-class citizens. They can be assigned to variables, passed as arguments to other functions, returned from other functions, or stored in data structures. 
+
+5. An object is a complex data structure that allows you to store collections of data and more complex entities. They allow for organizing related data and behavior into a single entity, making the code more modular and manageable. 
+
+
+
+
