@@ -1,0 +1,6 @@
+1. model, access, update
+2. cross-site scripting (XSS)
+3. things
+4. Event listeners
+5. jQuery
+6. val()
