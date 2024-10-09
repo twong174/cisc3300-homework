@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Class #6</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Fetch Recipes</h1>
+
+    <script>
+       
+        $.get('http://localhost:3000/recipes', function(response) {
+            console.log(response);
+        })
+        .fail(function() {
+            console.log('Error fetching recipes.');
+        });
+
+    </script>
+</body>
+</html>

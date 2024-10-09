@@ -1,0 +1,29 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Spaghetti Bolognese",
+      "description": "Pasta dish with meat sauce."
+    },
+    {
+      "id": 2,
+      "title": "Chicken Curry",
+      "description": "Dish made with chicken and a selection of spices."
+    },
+    {
+      "id": 3,
+      "title": "Vegetable Stir Fry",
+      "description": "A stir fry with  vegetables and a sauce."
+    },
+    {
+      "id": 4,
+      "title": "Pancakes",
+      "description": "Fluffy pancakes served with maple syrup and butter."
+    },
+    {
+      "id": 5,
+      "title": "Beef Tacos",
+      "description": "Crispy tacos filled with  beef, lettuce, and cheese."
+    }
+  ]
+}
