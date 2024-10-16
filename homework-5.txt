@@ -1,0 +1,40 @@
+What is HTTP? What are the different HTTP request methods and how do they differ?
+HTTP stands for Hypertext Transfer Protocol and defines how messages are formatted and transmitted between clients (browsers) and servers. HTTP follows a request-response model, where clients send requests to servers, and servers respond with the requested information. The different request methods include: 
+GET: Retrieves data from the server. It's safe and idempotent.
+POST: Sends data to the server to create a new resource. It's non-idempotent because submitting the same data multiple times can create multiple resources. 
+PUT: Updates an existing resource on the server. It's idempotent because multiple identical requests update the resource similarly. 
+DELETE: Removes a resource from the server. 
+PATCH: Partially updates a resource on the server. It modifies only specific attributes. HEAD: Similar to GET but only retrieves the response's headers, not the body. OPTIONS: Used to describe the communication options for the target resource, often for CORS purposes.
+
+
+What is an API? What is JSON?
+An API is a set of rules and protocols that allow different software applications to communicate with each other. It defines how requests and responses should be structured to enable interaction between systems. JSON is a data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. It represents data as attribute–value pairs and arrays, often used for transmitting data between a server and a web application.
+
+What is AJAX? What is meant by asynchronous code?
+AJAX is a technique used in web development that allows web pages to update asynchronously by exchanging data with a web server behind the scenes. This allows parts of a web page to be updated without reloading the whole page. Asynchronous code refers to the ability to execute tasks independently of the main program flow. Instead of waiting for a task to complete, the program can continue executing other tasks. Once the asynchronous task completes, the result is handled via callbacks, promises, or async/await.
+
+What is REST and what are resources? If my application had a concept called posts and
+was designed in a RESTful way, what would the URI and HTTP request method be to:
+a. retrieve multiple posts
+b. retrieve a single post
+c. save a post
+d. update a post
+
+REST is an architectural style for designing networked applications. It uses standard HTTP methods and focuses on resources, entities or objects the API can access. A resource in REST is identified by a URI. Each resource can be retrieved, created, updated, or deleted using HTTP request methods.
+
+a. Retrieve multiple posts
+URI: /posts
+HTTP Method: GET
+b. Retrieve a single post
+URI: /posts/{id} (where {id} is the unique identifier of the post)
+HTTP Method: GET
+c. Save a post (create a new post)
+URI: /posts
+HTTP Method: POST
+d. Update a post
+URI: /posts/{id}
+HTTP Method: PUT or PATCH
+
+Define hoisting and closures in JS.
+Hoisting refers to the behavior where variable and function declarations are moved to the top of their containing scope (before code execution). However, variable initializations are not hoisted, only declarations. Closures occur when a function "remembers" the variables from its outer scope even after the outer function has finished executing. This allows the function to access those variables later when invoked.
+
