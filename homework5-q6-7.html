@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework #5</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="../styles/homework5-q6-7.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="title-container">
+      <h1>Current Temperature in NYC (2 meters above ground)</h1>
+    </div>
+    <div id="temperature"></div>
+  </div>
+  
+
+  <script>
+    $(document).ready(function() {
+      // Open-Meteo API endpoint for NYC temperature at 2m above ground
+      const apiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=40.7128&longitude=-74.0060&current_weather=true';
+
+      $.ajax({
+        url: apiUrl,
+        method: 'GET',
+        success: function(response) {
+          const temperatureCelsius = response.current_weather.temperature;
+          const temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
+          $('#temperature').text(`Temperature: ${temperatureFahrenheit.toFixed(2)}°F`);
+        },
+        error: function() {
+          $('#temperature').text('Failed to retrieve temperature.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
