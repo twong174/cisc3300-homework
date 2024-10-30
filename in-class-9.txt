@@ -1,0 +1,8 @@
+1. URL  
+2. $_GET  
+3. $_POST  
+4. not appear  
+5. HTML syntax  
+6. accuracy  
+7. cookie  
+8. Sessions
