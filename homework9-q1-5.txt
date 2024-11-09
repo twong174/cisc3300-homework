@@ -1,0 +1,14 @@
+1. SQL is a language that manages and manipulates databases. It allows users to perform CRUD applications in relational databases. SQL also provides commands to query data, define schemas, manage permissions, and perform other database tasks. 
+
+MySQL is an open-source relational database management system that uses SQL. MySQL stores and retrieves data for various applications, including websites, data analytics, and backend services. 
+
+Relational databases organize data into tables with rows and columns. Each table represents a different type of entity and is linked by relationships. These databases use a structured schema to define the types of data and the relationships between tables, making it easy to maintain and query structured data.
+
+2. Normalization is used in relational databases to reduce redundancy and dependency by organizing fields and tables. Normalization aims to improve data integrity and reduce duplicate data, making the database more efficient to update and manage. It involves diving a larger table into smaller tables and defining relationships between them. 
+
+3. A primary key is a unique identifier for each record in a table. It ensures that each row in the table is unique and usually doesn’t allow NULL values. Only one primary key is allowed per table. A foreign key is a column (or set of columns) in one table that refers to the primary key of another table. Foreign keys create a link between tables, enforcing referential integrity by ensuring that the value in the foreign key column exists in the referenced primary key column.
+
+4. The three main types of relationships between tables in relational databases are one-to-one, one-to-many, and many-to-many. 
+
+5.  An inner join returns only the rows that have matching values in both tables based on a specified condition. If a row in either table doesn’t have a match, it won’t be included in the result. A left join returns all rows from the left table and the matching rows from the right table. If there is no match in the right table, the result will still include the row from the left table but with NULL values for the right table’s columns.
+
