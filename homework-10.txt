@@ -1,0 +1,15 @@
+1. A PDO is a PHP extension that provides a way to interact with different types of databases using an OOP approach. It also helps prevent SQL injection by allowing the use of prepared statements, which separate SQL code from user input.
+
+A DSN is a string that provides the information needed to connect to a database. In the context of PDO, it specifies the type of database, database name, host, port, and any additional parameters required to connect to the database.
+
+2. A .env file is a text file used to store environment variables, such as database credentials, API keys, and other sensitive information, outside of your codebase. This allows you to configure your application settings without hard-coding them in your code, making it easier to manage different environments. 
+
+A .gitignore file is a file used by Git to specify which files or directories should be ignored in version control. This prevents sensitive data and unnecessary files from being included in your repository. You can add .env to .gitignore to ensure the file isn’t pushed to GitHub or other version control platforms.
+
+3. NO! You should never upload passwords, API keys, or other sensitive information to GitHub or any public repository. This can lead to security breaches and unauthorized access to your application or services. Instead, use environment variables stored in .env files to keep such data secure.
+
+4. SQL injection is a security vulnerability that occurs when an attacker can insert or "inject" malicious SQL code into a query. This can lead to unauthorized data access, data manipulation, or even deletion of the database. SQL injection typically occurs when user input is directly included in an SQL query without proper sanitization or escaping, allowing the attacker to alter the query's behavior and access protected data.
+
+5. Prepared statements are a way of executing SQL queries in a way that separates the query structure from user input. With prepared statements, the SQL code is sent to the database first and compiled, then the user inputs are passed separately. This prevents SQL injection, as the database treats user inputs as data, not as part of the SQL code.
+
+To pass variables to a prepared statement, you typically use placeholders (? or named parameters like :name). After preparing the statement, you bind variables to these placeholders and execute the query. 
